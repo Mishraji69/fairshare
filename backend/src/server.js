@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
-require('./setupDb');
+require('./setupDatabase'); // Ensure tables are created on startup
 
 const pool = require('./config/db');
 
