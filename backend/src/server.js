@@ -21,6 +21,10 @@ app.use('/', healthRoutes);
 app.use('/auth', authRoutes);
 app.use('/', groupRoutes);
 app.use('/', expenseRoutes);
+app.use(cors({
+  origin: '*'
+}));
+
 
 // ---- START SERVER ONLY AFTER DB CONNECTS ----
 const startServer = async () => {
